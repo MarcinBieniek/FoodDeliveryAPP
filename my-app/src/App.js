@@ -3,6 +3,9 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import store from './redux/store';
 
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './styles/global.scss';
+
 import MainLayout from './components/views/MainLayout/MainLayout';
 import Homepage from './components/pages/Homepage/Homepage';
 import ProductPage from './components/pages/ProductPage/ProductPage';

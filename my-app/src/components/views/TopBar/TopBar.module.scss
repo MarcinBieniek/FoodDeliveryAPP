@@ -1,0 +1,22 @@
+@import "../../../styles/settings.scss";
+
+.navbar {
+    background-color: black; 
+    color: white;
+    height: 10vh;
+    .container {
+        .brand {
+            color: white;
+        }
+        .icon {
+            color: white;
+            font-size: 20px;
+            padding: 0px 10px;
+        }
+        .login {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    }
+}

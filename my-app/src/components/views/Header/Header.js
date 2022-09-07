@@ -1,14 +1,18 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 
-const Header = () => {
+import styles from './Header.module.scss';
 
-    return (
-        <div>
-            <h1>Header</h1>
-        </div>
-    );
-};
+import TopBar from '../TopBar/TopBar';
+import MenuBar from '../MenuBar/MenuBar';
+
+const Header = () => (
+
+    <header className={styles.root}>
+        <TopBar />
+        <MenuBar />
+    </header>
+);
 
 // Header.propTypes = {};
 
