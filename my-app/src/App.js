@@ -1,7 +1,5 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import store from './redux/store';
+import { Routes, Route } from 'react-router-dom';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './styles/global.scss';
@@ -17,24 +15,24 @@ import Contact from './components/pages/Contact/Contact';
 import NotFound from './components/pages/NotFound/NotFound';
 
 const App = () => (
-  <Provider store={store}>
     <main>
-      <BrowserRouter>
-        <MainLayout>
-          <Routes>
-            <Route path={'/'} element={<Homepage />} />
-            <Route path={'/product/:productId'} element={<ProductPage />} />
-            <Route path={'/product/:categoryId'} element={<ProductList />} />
-            <Route path={'/cart'} element={<Cart />} />
-            <Route path={'/search'} element={<SearchPage />} />
-            <Route path={'/about'} element={<About />} />
-            <Route path={'/contact'} element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </MainLayout>
-      </BrowserRouter>
+      <MainLayout>
+        <Routes>
+          <Route path='/' element={<Homepage />} />
+          <Route path='/product/:productId' element={<ProductPage />} />
+          <Route path='/category/:categoryId' element={<ProductList />} />
+          <Route path='/breakfast' element={<ProductList />} />
+          <Route path='/lunch' element={<ProductList />} />
+          <Route path='/dinner' element={<ProductList />} />
+          <Route path='/dessert' element={<ProductList />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/search' element={<SearchPage />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </MainLayout>
     </main>
-  </Provider>
 )
 
 export default App;

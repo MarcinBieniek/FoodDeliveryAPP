@@ -1,2 +1,50 @@
 @import "../../../styles/settings.scss";
 
+.topMenu {
+    height: 60px;
+
+
+    a {
+        text-decoration: none;
+        color: $color-black;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;   
+        
+        li {
+            display: inline-block;
+            position: relative;
+            padding-right: 30px;            
+            
+            ul {
+                display: none;
+                position: absolute;
+                padding-top: 17px;
+                
+
+                li {
+                    background-color: $color-white;
+                    width: 90%;
+                    padding: 5px 0;
+                }
+            }
+        
+        &:hover ul { 
+            display: block;
+            position: absolute;
+            }    
+        }       
+
+
+    } 
+}
+
+
+    
+
+
