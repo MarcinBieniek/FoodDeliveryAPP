@@ -1,8 +1,11 @@
 @import "../../../styles/settings.scss";
 
+// top menu bar
+
 .topMenu {
     height: 60px;
 
+    // top left menu
 
     a {
         text-decoration: none;
@@ -10,41 +13,85 @@
         letter-spacing: 1px;
         font-size: 20px;
     }
-    
     ul {
         list-style: none;
         margin: 0;
-        padding-left: 0;   
-        
+        padding-left: 0;      
         li {
             display: inline-block;
             position: relative;
             padding-right: 30px;            
-            
             ul {
                 display: none;
                 position: absolute;
                 padding-top: 17px;
-                
-
                 li {
                     background-color: $color-white;
                     width: 90%;
                     padding: 5px 0;
                 }
-            }
-        
+            }       
         &:hover ul { 
             display: block;
             position: absolute;
+            max-height: 100px;
             }    
         }       
-
-
     } 
+
+    // search input 
+
+    .searchForm{
+        position: relative;
+        
+        .searchIcon {
+            height: 1.5rem;
+            width: 1.5rem;
+            padding: 4px;
+            position: absolute;
+            box-sizing:border-box;
+            top:50%;
+            left:5px;
+            transform: translateY(-50%);
+            color: grey;
+        }
+
+        .searchInput {
+            border: 2px solid grey;
+            border-radius: 5px;
+            padding: 5px 5px 5px 30px;
+            margin-right: 20px;
+            width: 200px;
+            color: grey;
+            &:focus {
+                outline: none;
+            }
+        }
+        &:hover .searchIcon, .searchInput {
+            color: $color-black;
+            transition: all 0.5s ease-out;
+        }
+        &:hover input::placeholder {
+            color: $color-black;
+            transition: all 0.5s ease-out;
+        }
+    }
+
+    // search button
+
+    .searchButton {
+        border: none;
+        background-color: $orange-light;
+        border-radius: 5px;
+        padding: 7px 20px;
+        color: $color-white;
+        &:hover {
+            background-color: $orange-strong; 
+        }
+    }
+    
 }
 
 
-    
 
 
