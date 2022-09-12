@@ -12,7 +12,7 @@ const TopBar = () => (
     <Navbar className={styles.navbar}>
         <Container className={styles.container}>
           <Navbar.Brand href="/" className={styles.brand}>
-           <img src={`${process.env.PUBLIC_URL}/images/design/logoblack.png`} />
+            <img src={`${process.env.PUBLIC_URL}/images/design/logoblack.png`} />
           </Navbar.Brand>
           <Navbar.Collapse className="justify-content-end"> 
             <FontAwesomeIcon className={styles.icon} icon={faCartShopping} />

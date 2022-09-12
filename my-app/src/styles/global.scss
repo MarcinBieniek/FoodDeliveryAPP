@@ -1,8 +1,10 @@
 @import "./settings.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500");
 
 body {
-  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: $background-grey;
 }
 

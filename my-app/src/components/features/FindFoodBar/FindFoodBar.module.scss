@@ -1,0 +1,90 @@
+@import "../../../styles/settings.scss";
+
+.findFood__wrapper {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 200px; 
+    background-color: $background-grey;
+
+    .dropdown {
+        width: 250px;
+        position: relative;
+        user-select: none;
+        
+        .dropdown__btn { 
+            padding: 5px 20px;
+            background: $color-white;
+            box-shadow: 5px 3px 10px 6px rgba(0, 0, 0, 0.06);
+            font-weight: bold;
+            color: $font-black;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            font-size: 18px;
+            
+            .dropdown__btn__selectedDiv {
+                display: flex;
+                justify-content: space-between;
+
+                .dropdown__btn__selected{
+                    font-size: 20px;
+                    color: $font-grey;
+                }
+
+                .dropdown__btn__icon {
+                    font-size: 24px;
+                    color: $orange-strong;
+                }
+            
+            }
+
+        }
+        .dropdown__btn__first {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-right: 1px solid $font-grey
+        }
+        .dropdown__btn__last {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-left: 1px solid $font-grey;
+        }
+
+        .dropdown__content {
+            position: absolute;
+            top: 110%;
+            left: 0;
+            padding: 15px;
+            background: $color-white;
+            box-shadow: 5px 3px 10px 6px rgba(0, 0, 0, 0.06);
+            color: $font-grey;
+            width: 100%;
+            font-size: 18px;
+
+            .dropdown__item {
+                padding: 10px;
+                cursor: pointer;
+                transition: all 0.2s; 
+                
+                &:hover {
+                    color: $font-black;
+                    font-weight: 100;
+                    background: #fcfcfc;
+                }
+            }
+        }
+    }
+
+    .submit__button{
+        border: none;
+        margin-left: 25px;
+        background-color: $orange-strong;
+        border-radius: 5px;
+        padding: 14px 40px;
+        color: $color-white;
+        &:hover {
+            background-color: $orange-light; 
+        }
+    }
+}
