@@ -3,6 +3,8 @@ import React from 'react';
 
 import Hero from '../../views/Hero/Hero';
 import FindFoodBar from '../../features/FindFoodBar/FindFoodBar';
+import ProductListHeader from '../../common/ProductListHeader/ProductListHeader';
+import ProductList from '../../features/ProductList/ProductList';
 
 const Homepage = () => {
 
@@ -10,6 +12,8 @@ const Homepage = () => {
         <>
             <Hero />
             <FindFoodBar />
+            <ProductListHeader />
+            <ProductList />
         </>
     );
 };
