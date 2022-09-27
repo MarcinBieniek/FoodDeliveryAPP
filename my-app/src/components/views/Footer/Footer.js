@@ -1,10 +1,12 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 
+import styles from './Footer.module.scss'
+
 const Footer = () => {
 
     return (
-        <h1>Footer</h1>
+        <p className={styles.footer}>Code by Marcin Bieniek / Design by DesignCoz (free)</p>
     );
 };
 
