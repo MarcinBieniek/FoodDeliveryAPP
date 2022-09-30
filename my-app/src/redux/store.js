@@ -1,9 +1,13 @@
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import initialState from './initialState';
 
-const reducer = (state, action) => {
-  return state;
-};
+import dishesReducer from './dishesRedux';
+
+const subreducers = {
+  dishes: dishesReducer,
+}
+
+const reducer = combineReducers(subreducers);
 
 const store = createStore(
   reducer,
